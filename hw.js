@@ -13,3 +13,7 @@ console.log(sum(5, 8));
 
 //Exercise 2
 
+function numCheck(n1, n2) {
+    return n1 === 50 || n2 === 50 || n1 + n2 === 50
+  }
+  console.log(numCheck(50, 1));
