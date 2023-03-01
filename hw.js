@@ -54,3 +54,18 @@ else {
 }
 }
 console.log(range(40, 100))
+
+
+//Exercise 6
+
+const copyStr = (str, n) => {
+    let newStr = ""
+    for (let i = 0; i < n; i++) {
+      newStr += str + " "
+    }
+    return newStr
+  }
+  console.log(copyStr("Funky Town", 12))
+
+  //Exercise 7
+  
