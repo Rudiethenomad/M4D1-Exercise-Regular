@@ -39,3 +39,18 @@ function largestInt(in1, in2, in3)
 
 }
 console.log(largestInt(8, 10, 1));
+
+//Exercise 5
+function range(int1, int2){
+    if (int1 >= 40 && int1 <= 60 && int1 >= 40 && int1 <= 60 ){
+        return "between 40 ~ 60"
+    }
+    else if (int1 >= 70 && int1 <= 100 && int1 >= 40 && int1 <= 100 )
+    {
+        return "between 70 ~ 100"
+}
+else {
+    return "not in range"
+}
+}
+console.log(range(40, 100))
