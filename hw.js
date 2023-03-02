@@ -177,13 +177,25 @@ function noMatch(arr) {
 
  //Exercise 14
 
- function largestEven(arr){
+ function findLargeEven(arr) {
     let even = []
-    for (let i =0; i < arr.length; i++){
-        let new = arr[i]
-
-        if (new % 2 === 0){
-            even.push(new)
-        }
+  
+    for (let i = 0; i < arr.length; i++) {
+      let num = arr[i]
+  
+      if (num % 2 === 0) {
+        even.push(num)
+      }
     }
- }
+  
+
+  
+      return Math.max.apply(null, arr);
+  }
+   console.log(findLargeEven([1000, 91, 69, 71, 91]));
+
+   //Exercise 15
+   function pollarInt(n1, n2){
+    return(n1 < 0 && n2 > 0)|| (n1 > 0 && n2 < 0)
+   }
+   console.log(pollarInt(5, 8))
