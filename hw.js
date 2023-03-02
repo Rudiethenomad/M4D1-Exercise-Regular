@@ -141,3 +141,36 @@ function noMatch(arr) {
 
    }
    console.log(longString(['ou812', 'peace', 'burn one down']));
+
+   //Exercise 12
+
+    function type(ang) {
+  switch (true) {
+    case ang >= 0 && ang < 90:
+      return "Acute angle";
+      break;
+
+     case ang === 90:
+      return "Right angle";
+      break;
+
+     case ang > 90 && ang < 180:
+       return "Obtuse angle";
+       break;
+
+      case ang === 180:     
+       return "Straight angle";
+       break;
+
+     default:
+       return "angle not found";
+      break;
+  }
+ }
+ console.log(type(360));
+
+ //Exercise 13
+ function greatestElement(arr) {
+ return arr.indexOf(Math.max.apply(null, arr));
+ };
+ console.log(greatestElement([8, 420, 77]));
