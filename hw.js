@@ -174,3 +174,16 @@ function noMatch(arr) {
  return arr.indexOf(Math.max.apply(null, arr));
  };
  console.log(greatestElement([8, 420, 77]));
+
+ //Exercise 14
+
+ function largestEven(arr){
+    let even = []
+    for (let i =0; i < arr.length; i++){
+        let new = arr[i]
+
+        if (new % 2 === 0){
+            even.push(new)
+        }
+    }
+ }
