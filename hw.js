@@ -109,5 +109,35 @@ const copyStr = (str, n) => {
   }
 }
   console.log(examine([3, 2]));
+  
 //Exercise 10
 
+function noMatch(arr) {
+    let diff = true
+    if (arr.includes(1) || arr.includes(3)) {
+      diff = false
+    }
+  
+    return diff
+  }
+   console.log(noMatch([1, 5]));
+
+   //Exercise 11
+
+   function longString(arr){
+    let firsLength = 0
+    let newLength = ""
+
+    for (let i = 0; i < arr.length; i++)
+    {
+        const str = arr[i]
+
+        if (firstLength = str.length ){
+            firstLength = str.length
+            newLength = str
+        }
+    }
+    return newLength
+
+   }
+   console.log(longString(['ou812', 'peace', 'burn one down']));
