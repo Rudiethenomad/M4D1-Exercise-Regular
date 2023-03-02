@@ -68,4 +68,29 @@ const copyStr = (str, n) => {
   console.log(copyStr("Funky Town", 12))
 
   //Exercise 7
-  
+  // Ex 7 is running but not returning the answer expected
+  function first3(str){
+ 
+    if (first3 === "Los" || first3 === "New")
+    {
+        return str
+    }
+    else {
+        return 'blank'
+    }
+
+  }
+
+  console.log(first3('New Orliens'))
+
+  //Exercise 8
+
+  function calculate(arr){
+    let int = 0
+    for(let i =0; i< arr.length; i++)
+    {
+    int += arr[i]
+    }
+    return int
+  }
+  console.log(calculate([12, 98, 812]));
