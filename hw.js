@@ -94,3 +94,20 @@ const copyStr = (str, n) => {
     return int
   }
   console.log(calculate([12, 98, 812]));
+
+  //Exercise 9
+
+  function examine (arr){
+    let outcome = false
+    for (let i = 0; i < arr.length; i++){
+        const int = arr[i]
+    if (int === 1 || int === 3){
+        outcome = true
+    }
+    return outcome
+    
+  }
+}
+  console.log(examine([3, 2]));
+//Exercise 10
+
