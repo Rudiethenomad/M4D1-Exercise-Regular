@@ -199,3 +199,55 @@ function noMatch(arr) {
     return(n1 < 0 && n2 > 0)|| (n1 > 0 && n2 < 0)
    }
    console.log(pollarInt(5, 8))
+
+   //Exercise 16
+   function newString(str){
+    if (str.length < 3){
+        return str.toUpperCase()
+    }
+    else
+    {
+        return str.slice(0, 3).toLowerCase() + str.slice(3).toUpperCase()
+    }
+   }
+   console.log(newString('Play that Rock and Roll'))
+
+   //Exercise 17
+
+   function numberToString(n1, n2){
+    let sum = n1 + n2
+  if (sum >= 50 && sum <= 80) {
+    return 65
+  } 
+  else {
+    return 80
+  }
+
+   }
+console.log(numberToString(69, 412));
+
+//Exercsie 18
+function strFactor(num){
+let str = ""
+if (num % 3 !== 0 && num % 7 !== 0 && num % 5 !== 0) return num
+
+  if (num % 3 === 0) str += "Diego"
+  if (num % 5 === 0) str += "Riccardo"
+  if (num % 7 === 0) str += "Stefano"
+  return str
+}
+console.log(strFactor(7));
+
+//Exercise 19
+function acronym(str){
+    let newStr= []
+    let spStr = str.split(" ")
+    
+    for(let i = 0; i < spStr.length; i++){
+        const letter = spStr[i]
+        newStr.push(letter.charAt(0).toUpperCase())
+    }
+
+    return newStr.join("")
+}
+console.log(acronym("Don't Order New Entry"))
